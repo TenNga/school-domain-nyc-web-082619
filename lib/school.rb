@@ -1,4 +1,4 @@
-request 'pry'
+require 'pry'
 class School
   def initialize (sName)
     @schoolName = sName
