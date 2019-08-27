@@ -21,7 +21,7 @@ class School
   end
   
   def sort 
-    @roster.sort_by { |grade,names| names}.to_h
-    
+    sorted = @roster.sort_by { |grade,names| names}.to_h
+    sorted
   end
 end
