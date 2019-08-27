@@ -22,8 +22,8 @@ class School
   
   def sort 
     @roster.sort_by { |grade,names| names}.to_h
-    @roster.map do |grade,names|
-      grade = names.sort 
+    @roster.each do |grade,names|
+      @roster[grade] = names.sort 
     end
   end
 end
