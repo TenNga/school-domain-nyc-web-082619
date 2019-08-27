@@ -2,11 +2,12 @@ require 'pry'
 class School
   
   def initialize (sName)
-    @schoolName = sName@roster = {}
+    @schoolName = sName
+    @roster = {}
   end
   
   def roster
-    
+    @roster
   end
   
   def add_student(name,grade)
