@@ -1,3 +1,4 @@
+request 'pry'
 class School
   def initialize (sName)
     @schoolName = sName
@@ -9,6 +10,7 @@ class School
   
   def add_student(name,grade)
     @roster[grade] = [ ]
+    binding.pry
     @roster[grade] << name
   end
   
